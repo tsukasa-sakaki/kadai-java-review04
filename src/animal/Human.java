@@ -19,8 +19,7 @@ public class Human extends Animal implements Thinkable{
 
     //引数ありのコンストラクタ
     public Human(String name, int age, String hobby) {
-        super.setName(name);
-        super.setAge(age);
+        super(name, age);  //スーパークラスのコンストラクタを利用
         this.hobby  = hobby;
     }
 
